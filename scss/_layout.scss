@@ -1,23 +1,65 @@
 body,
-html {
+html,
+.section {
     height: 100%;
+    word-spacing: 0.1em;
+    line-height: 1.55;
 }
 
+.section {
+    position: relative;
+}
+
+.section:nth-of-type(2) {
+    background-color: rgb(92, 128, 188);
+    color: rgba(255, 255, 255, 0.904);
+}
+
+nav,
 h1,
 h2,
-h3,
+h3 {
+    font-family: 'Oxygen', sans-serif;
+}
+
 h4,
 h5,
 h6,
 p {
-    word-spacing: 0.15em;
-    line-height: 1.55;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-#landing-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/code.jpg");
-    /* To make the landing image full height of view */
-    min-height: calc(100vh - #{$nav_height}px);
+nav.navbar {
+    letter-spacing: 0.03em;
+    top: 0;
+    position: fixed;
+    height: 63px;
+    display: block;
+    width: 100%;
+    z-index: 9;
+}
+
+#fullpage {
+    padding-top: 63px !important;
+}
+
+.h-first-page {
+    width: 100%;
+    height: calc(100% - 50px) !important;
+    height: calc(100vh - #{$nav_height}) !important;
+}
+
+.project-area {
+    margin-top: 10% !important;
+}
+
+.project-img {
+    max-height: 100%;
+}
+
+.landing-img {
+    background-image: linear-gradient(to bottom, rgba(68, 68, 68, 0.493), rgba(12, 8, 66, 1)), url("../images/code.jpg");
+    /* To make the landing image full height of view  */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
