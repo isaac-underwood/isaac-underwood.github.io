@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "dependencies": {
+        "bootstrap": "^4.4.1",
         "fullpage.js": "^3.0.8",
         "node-sass": "^4.13.1"
     },

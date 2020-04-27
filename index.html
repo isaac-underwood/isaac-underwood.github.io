@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <script type="text/javascript" src="js/fullpage.js"></script>
 
+
     <title>Isaac Underwood &mdash; Portfolio</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+<body data-spy="scroll" data-target="#navigation">
+    <nav id="navigation" class="navbar navbar-nav navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -25,177 +26,173 @@
 
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-uppercase">
-                    <li class="nav-item active px-2">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#roguelike">Projects</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="#qualifications">Qualifications</a>
                     </li>
                 </ul>
             </div>
+            <a class="social-icon" href="https://github.com/isaac-underwood"><i title="Github" class="fab fa-github fa-2x px-2 align-middle"></i></a>
         </div>
     </nav>
     <div id="fullpage">
-        <div class="section first-section landing-img">
-            <div class="container-fluid h-first-page">
-                <div class="d-flex align-items-center justify-content-center h-first-page">
-                    <h1 id="test" class="display-1 text-center text-white">Aspiring Developer.</h1>
+        <div class="section landing-img text-white" data-anchor="top">
+            <div class="container-fluid h-100 w-100">
+                <div class="d-flex flex-column align-items-center justify-content-center h-75">
+                    <h1 class="display-5">Isaac Underwood</h1>
+                    <h1 class="display-1">Aspiring Developer.</h1>
+
                 </div>
-            </div>
+                <div class="d-flex align-items-end justify-content-center">
 
-        </div>
-
-
-        <div class="section">
-            <div class="container-fluid ml-lg-5 pl-lg-5 text-center text-md-left">
-                <h1 class="display-4 pt-2">Projects</h1>
-                <div class="projects-nav">
-                    <ul class="nav d-flex flex-row">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mikrosoft-gaming">Roguelike</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mikrosoft-gaming">Mikrosoft Gaming</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#my-oranga">My Oranga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#word-mastermind">Word Mastermind</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#game-mapping">Game Mapping</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="project h-100 m-lg-3 pt-2" id="mikrosoft-gaming">
-                    <div class="row">
-                        <div class="project-area text-center text-md-left mx-auto col-sm-6 col-lg-5 w-75 h-100">
-                            <h2 class="">Mikrosoft Gaming</h2>
-                            <h5 class="pt-3">Created collaboratively in the second year of my BIT degree, this web app allows you to track highscores for games, create groups and compare highscores with friends.</h5>
-                            <div class="text-center my-3">
-                                <i title="Laravel" class="fab fa-laravel fa-3x"></i>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-6 col-lg-7">
-                            <img class="img-fluid project-img" src="./images/projects/test3.jpg" alt="Mikrosoft Gaming">
-                        </div>
-                    </div>
+                    <a class="btn btn-primary btn-lg" href="#roguelike">View Projects</a>
                 </div>
             </div>
         </div>
-        <div class="section d-flex align-items-center ml-lg-5 pl-lg-5 ml-sm-2 pl-sm-2">
+
+        <div class="section" data-anchor="experience">
             <div class="container-fluid">
-                <h1 class="display-4">Projects</h1>
-                <div class="projects-nav">
-                    <ul class="nav d-flex flex-row">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mikrosoft-gaming">Mikrosoft Gaming</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#my-oranga">My Oranga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#word-mastermind">Word Mastermind</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#game-mapping">Game Mapping</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="project m-lg-3 pt-2" id="mikrosoft-gaming">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-5">
-                            <h2 class="">Mikrosoft Gaming</h2>
-                            <h5 class="ml-1 pt-3 w-75">Created collaboratively in the second year of my BIT degree, this web app allows you to track highscores for games, create groups and compare highscores with friends.</h5>
-                            <div class="w-75 d-inline-flex flex-row justify-content-center my-3">
-                                <i title="Laravel" class="fab fa-laravel fa-3x"></i>
-                            </div>
-                            <!-- <div class="w-75 next-project text-center align-items-end">
-                                <h3><a class="text-muted" href="#my-oranga">Next Project</a></h3>
-                            </div> -->
-
+                <h1 class="display-1">Experience</h1>
+                <div class="d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="info-area">
+                        <div class="p-2">
+                            <h4>Service Desk Analyst &mdash; Southern District Health Board</h4>
+                            <h5>April 2020 &mdash; Present</h5>
                         </div>
-
+                        <div class="p-2">
+                            <h4>Peer Tutor &mdash; Otago Polytechnic</h4>
+                            <h5>April 2020 &mdash; Present</h5>
+                        </div>
+                        <div class="p-2">
+                            <h4>Tutorial Assistant (Teaching Assistant) &mdash; Otago Polytechnic</h4>
+                            <h5>February 2019 &mdash; Present</h5>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
-
-        <section class="d-flex align-items-center ml-lg-5 pl-lg-5 ml-sm-2 pl-sm-2" id="projects">
-            <div class="container-fluid">
-                <h1 class="display-4">Projects</h1>
-                <div class="projects-nav">
-                    <ul class="nav d-flex flex-row">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mikrosoft-gaming">Mikrosoft Gaming</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#my-oranga">My Oranga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#word-mastermind">Word Mastermind</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#game-mapping">Game Mapping</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="project m-lg-3 pt-2" id="mikrosoft-gaming">
-                    <div class="row flex-row">
-                        <div class="col-sm-4 col-lg-5">
-                            <h2 class="">Mikrosoft Gaming</h2>
-                            <h5 class="ml-1 pt-3 w-75">Created collaboratively in the second year of my BIT degree, this web app allows you to track highscores for games, create groups and compare highscores with friends.</h5>
-                            <div class="w-75 d-inline-flex flex-row justify-content-center my-3">
-                                <i title="Laravel" class="fab fa-laravel fa-3x"></i>
+        <div class="section projects" data-anchor="roguelike">
+            <div class="container-fluid text-center">
+                <h1 class="display-1">Projects</h1>
+                <div class="project">
+                    <div class="row">
+                        <div class="info-area col-sm-6 col-lg-5">
+                            <h1 class="display-4">Roguelike</h1>
+                            <h4 class="pt-3">Created collaboratively in the second year of my BIT degree using C++/CLI, this is a 2D Roguelike game where the aim is to eliminate all enemies to win.</h4>
+                            <div class="my-5 d-flex-inline">
+                                <img title="C++" alt="C++" class="img-fluid align-middle" src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" />
+                                <a class="social-icon" href="https://github.com/isaac-underwood/roguelike"><i title="View on GitHub" class="fab fa-github fa-3x px-2 align-middle"></i></a>
                             </div>
-                            <!-- <div class="w-75 next-project text-center align-items-end">
-                            <h3><a class="text-muted" href="#my-oranga">Next Project</a></h3>
-                        </div> -->
-                        </div>
-                        <div class="col-sm-6 col-lg-7">
-                            <img class="img-fluid" src="">
-                        </div>
-                    </div>
 
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="section projects" data-anchor="mikrosoft-gaming">
+            <div class="container-fluid text-center">
+                <h1 class="display-1">Projects</h1>
+                <div class="project">
+                    <div class="row">
+                        <div class="info-area col-sm-6 col-lg-5">
+                            <h1 class="display-4">Mikrosoft Gaming</h1>
+                            <h4 class="pt-3">Created collaboratively in the second year of my BIT degree using Laravel, this web app allows you to track highscores for games, create groups and compare highscores with friends.</h4>
+                            <a class="projects-view-live h5" href="http://mariadb.ict.op.ac.nz/~se19s2_02/op-stats-mikrosoft/Software%20Engineering%20Project/public/" target="_blank">
+                                <i title="View Website" class="fas fa-globe fa-1x px-2"></i> View Live Website
+                            </a>
+                            <div class="my-5">
+                                <i title="Laravel" class="fab fa-laravel fa-3x px-2"></i>
+                                <a class="social-icon" href="https://github.com/isaac-underwood/mikrosoft-gaming"><i title="View on GitHub" class="fab fa-github fa-3x px-2"></i></a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section projects" data-anchor="my-oranga">
+            <div class="container-fluid text-center">
+                <h1 class="display-3">Projects</h1>
+                <div class="project">
+                    <div class="row">
+                        <div class="info-area col-sm-6 col-lg-5">
+                            <h1 class="display-4">My Oranga</h1>
+                            <h4 class="pt-3">This wellness tool allows you to track parts of your diet, exercise and create goals.</h4>
+                            <a class="projects-view-live h5" href="http://mariadb.ict.op.ac.nz/~undeis1/project/web2-project/my-oranga/public/" target="_blank">
+                                <i title="View Website" class="fas fa-globe fa-1x px-2"></i> View Live Website
+                            </a>
+                            <div class="my-5">
+                                <i title="Laravel" class="fab fa-laravel fa-3x px-2"></i>
+                                <a class="social-icon" href="https://github.com/isaac-underwood/my-oranga"><i title="View on GitHub" class="fab fa-github fa-3x px-2"></i></a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section projects text-dark" data-anchor="other-projects">
+            <div class="container-fluid text-center">
+                <div class="project">
+                    <div class="row">
+                        <div class="info-area col-sm-6 col-lg-5">
+                            <h1 class="display-3">Other Projects</h1>
+                            <h3 class="pt-3">Counter-Strike: Global Offensive Map Making</h3>
+                            <h6>Custom game maps which I collaborated in or created.</h6>
+                            <a class="social-icon" href="https://github.com/isaac-underwood/csgo-maps"><i title="View on GitHub" class="fab fa-github fa-2x px-2"></i></a>
+                            <h3 class="pt-3">Word Mastermind</h3>
+                            <h6>A Ruby implementation of the <a href="https://en.wikipedia.org/wiki/Mastermind_(board_game)" target="_blank">Mastermind</a> game using words.</h6>
+                            <a class="social-icon" href="https://github.com/isaac-underwood/ruby-word-mastermind"><i title="View on GitHub" class="fab fa-github fa-2x px-2"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="qualifications">
+            <div class="container-fluid">
+                <h1 class="display-3">Qualifications</h1>
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="info-area">
+                        <div class="p-2">
+                            <h3 class="pb-1"><i class="fas fa-graduation-cap px-2"></i>Bachelor of Information Technology</h3>
+                            <h5>Otago Polytechnic, Dunedin, New Zealand</h5>
+                            <h5>February 2018 &mdash; Present</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section fp-auto-height" data-anchor="footer">
+            <footer>
+                <a href="#top">Back to Top</a>
+                <div class="pb-2">
+                    © 2020 Copyright: IsaacUnderwood.com
+                </div>
+            </footer>
+        </div>
     </div>
-    <section id="experience">
-
-    </section>
-
-    <section id="qualifications">
-
-    </section>
-    <div class="container-fluid">
-        <!-- Need to add landing -->
-
-
-    </div>
-
+    <!-- Fullpage ends here-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        new fullpage('#fullpage', {
-            //options here
-            autoScrolling: true,
-            scrollHorizontally: true,
-            verticalCentered: false,
-            paddingTop: '63px',
-            fixedElements: 'nav, .navbar',
-        });
-
-        //methods
-    </script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
 </body>
 
 </html>
