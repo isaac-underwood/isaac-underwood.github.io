@@ -102,9 +102,15 @@ a {
 }
 
 //Section backgrounds
-[data-anchor="experience"] {
+[data-anchor="experience"], [data-anchor="professional-memberships"] {
     background: $color5;
     color: $text-color;
+}
+
+[data-anchor="twitter-track"] {
+    @include projects-background('../images/projects/twitter-track.png',
+    $projects-background-color);
+    @extend %bg-rules;
 }
 
 [data-anchor="roguelike"] {
