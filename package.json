@@ -5,7 +5,7 @@
     "dependencies": {
         "bootstrap": "^4.4.1",
         "fullpage.js": "^3.0.8",
-        "node-sass": "^5.0.0"
+        "node-sass": "^7.0.0"
     },
     "devDependencies": {},
     "scripts": {
