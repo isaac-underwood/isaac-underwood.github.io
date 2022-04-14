@@ -54,7 +54,7 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly scalable, accessible and maintainable Front end web applications"
     ),
-    emoji("⚡ Provide high quality solutions to complex business problems"),
+    emoji("⚡ Provide high quality solutions to solve complex business problems"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -154,7 +154,7 @@ const workExperiences = {
       date: "March 2021 – Present",
       desc: "Working in a cross-functional team to deliver modern, highly scalable and maintainable EdTech solutions that solve complex user problems.",
       descBullets: [
-        "Delivering solutions using micro front-end and microservice architecture with GraphQL, React.js and C# .NET",
+        "Delivering solutions using state of the art Micro Frontend and Microservice architecture with GraphQL, React.js and C#.NET",
         "Fixing bugs and delivering small features within the legacy monolithic product",
         "Stepping up to help lead in the front end space within the team"
       ]
