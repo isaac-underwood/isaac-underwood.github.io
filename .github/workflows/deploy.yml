@@ -6,6 +6,12 @@ env:
   USE_GITHUB_DATA: "true"
   MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
   push:
     branches:
       - master
