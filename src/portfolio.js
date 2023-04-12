@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Engineer 🚀 with experience of building high quality Web applications with Typescript / React / C#.NET"
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1WVLhAmXrh9-a0AxiERKAfcauH3ZkZgjn/edit?usp=sharing&ouid=105224870553008644531&rtpof=true&sd=true", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1SgU1e2e_iczPrwwBP_vHmN7kj48TDOx5/edit?usp=sharing&ouid=105224870553008644531&rtpof=true&sd=true", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
