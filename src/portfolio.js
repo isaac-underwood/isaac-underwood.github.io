@@ -23,7 +23,7 @@ const greeting = {
   username: "Isaac Underwood",
   title: "Hey, I'm Isaac",
   subTitle: emoji(
-    "A passionate Junior Full Stack Software Engineer 🚀 with experience of building high quality Web applications with Typescript / Reactjs / C#.NET and other frameworks and libraries."
+    "A passionate Software Engineer 🚀 with experience of building high quality Web applications with Typescript / React / C#.NET"
   ),
   resumeLink:
     "https://docs.google.com/document/d/1WVLhAmXrh9-a0AxiERKAfcauH3ZkZgjn/edit?usp=sharing&ouid=105224870553008644531&rtpof=true&sd=true", // Set to empty to hide the button
@@ -49,10 +49,10 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "FULL STACK DEVELOPER WITH AN OPEN MIND FOR LEARNING NEW TECHNOLOGY",
+  subTitle: "SOFTWARE ENGINEER WITH A PASSION FOR BUILDING AWESOME, ACCESSIBLE USER EXPERIENCES",
   skills: [
     emoji(
-      "⚡ Develop highly scalable, accessible and maintainable Front end web applications"
+      "⚡ Develop highly scalable, accessible and maintainable web applications"
     ),
     emoji("⚡ Provide high quality solutions to solve complex business problems"),
   ],
@@ -74,16 +74,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-code"
     },
     {
-      skillName: "reactjs",
+      skillName: "react",
       fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "vuejs",
       fontAwesomeClassname: "fab fa-vuejs"
-    },
-    {
-      skillName: "yarn",
-      fontAwesomeClassname: "fab fa-yarn"
     },
     {
       skillName: "sql",
@@ -92,11 +88,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "c#.net",
       fontAwesomeClassname: "fas fa-server"
-    },
-
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
     },
   ],
   display: true // Set false to hide this section, defaults to true
@@ -113,10 +104,6 @@ const educationInfo = {
       subHeader: "Bachelor of Information Technology",
       duration: "February 2018 - November 2020",
       desc: "Took courses predominantly in Software Development as well as Security, Networking, A.I and Machine Learning.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
     },
   ]
 };
@@ -128,11 +115,11 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "50%" //Insert relative proficiency in percentage
+      progressPercentage: "60%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "25%"
+      progressPercentage: "35%"
     },
     {
       Stack: "Programming",
@@ -148,15 +135,29 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineer",
+      company: "Education Perfect",
+      companylogo: require("./assets/images/educationPerfectLogo.png"),
+      date: "December 2022 – Present",
+      desc: "Working in a high performing product team responsible for the core entities of the Education Perfect product.",
+      descBullets: [
+        "Shipping high-quality features to simplify the way teachers can set up classes",
+        "Work on security improvements for the identity access management system",
+        "Improving the product experience for internal and external users by building a new self-serve admin experience around the core entities of the product",
+        "Contribute solutions to help create an amazing front-end developer experience, including GraphQL enhancements"
+      ]
+    },
+    {
       role: "Associate Software Engineer",
       company: "Education Perfect",
       companylogo: require("./assets/images/educationPerfectLogo.png"),
-      date: "March 2021 – Present",
-      desc: "Working in a cross-functional team to deliver modern, highly scalable and maintainable EdTech solutions that solve complex user problems.",
+      date: "March 2021 – December 2022",
+      desc: "Working in a cross-functional team to rebuild an area within the product in a scalable, maintainable and accessible micro front-end and microservice architecture, using GraphQL, React.js and C# .NET as part of the greenfield project.",
       descBullets: [
-        "Delivering solutions using state of the art Micro Frontend and Microservice architecture with GraphQL, React.js and C#.NET",
-        "Fixing bugs and delivering small features within the legacy monolithic product",
-        "Stepping up to help lead in the front end space within the team"
+        "Fixing bugs and developing high-value features within the legacy monolithic product",
+        "Communicating to a diverse group within the company, which includes translating technical ideas to non-technical people as well as demonstrating team progress to key stakeholders",
+        "Being open and transparent and constantly sharing ideas within the team, as well as effectively reflecting on the team and oneself to be continuously improving",
+        "Stepping up to help lead in the front end space within the team project"
       ]
     },
     {
@@ -201,18 +202,6 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
       image: require("./assets/images/nextuLogo.webp"),
       projectName: "Nextu",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -231,58 +220,25 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications I am working towards obtaining",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "IAAP Certified Professional in Accessibility Core Competencies (CPACC)",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "To enhance my knowledge on the broad accessibility domain, I am working towards obtaining a CPACC certification.",
+      image: require("./assets/images/cpacc-logo.png"),
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certification details",
+          url: "https://www.accessibilityassociation.org/s/certified-professional"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
