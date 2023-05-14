@@ -1,84 +1,70 @@
-import React, {useState, createRef} from "react";
-import "./ExperienceCard.scss";
-import ColorThief from "colorthief";
+import React, { Component } from "react";
+import "./ExperienceCard.css";
 
-export default function ExperienceCard({cardInfo, isDark}) {
-  const [colorArrays, setColorArrays] = useState([]);
-  const imgRef = createRef();
-
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
-  }
-
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
-  }
-
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
-  };
-
-  return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
-        <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+class ExperienceCard extends Component {
+  render() {
+    const experience = this.props.experience;
+    const theme = this.props.theme;
+    return (
+      <div
+        className="experience-card"
+        style={{ border: `1px solid ${experience["color"]}` }}
+      >
+        <div className="experience-card-logo-div">
+          <img
+            className="experience-card-logo"
+            src={require(`../../assests/images/${experience["logo_path"]}`)}
+            alt=""
+          />
         </div>
-
-        <img
-          crossOrigin={"anonymous"}
-          ref={imgRef}
-          className="experience-roundedimg"
-          src={cardInfo.companylogo}
-          alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
-        />
+        <div className="experience-card-body-div">
+          <div className="experience-card-header-div">
+            <div className="experience-card-heading-left">
+              <h3
+                className="experience-card-title"
+                style={{ color: theme.text }}
+              >
+                {experience["title"]}
+              </h3>
+              <p
+                className="experience-card-company"
+                style={{ color: theme.text }}
+              >
+                <a
+                  href={experience["company_url"]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: theme.text }}
+                >
+                  {experience["company"]}
+                </a>
+              </p>
+            </div>
+            <div className="experience-card-heading-right">
+              <p
+                className="experience-card-duration"
+                style={{ color: theme.text }}
+              >
+                {experience["duration"]}
+              </p>
+              <p
+                className="experience-card-location"
+                style={{ color: theme.text }}
+              >
+                {experience["location"]}
+              </p>
+            </div>
+          </div>
+          <p
+            className="experience-card-description"
+            style={{ color: theme.text }}
+          >
+            {experience["description"]}
+          </p>
+        </div>
       </div>
-      <div className="experience-text-details">
-        <h5
-          className={
-            isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
-          }
-        >
-          {cardInfo.role}
-        </h5>
-        <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
-      </div>
-    </div>
-  );
+    );
+  }
 }
+
+export default ExperienceCard;
