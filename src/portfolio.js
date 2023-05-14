@@ -1,331 +1,296 @@
-/* Change this file to get your personal Portfolio */
+/* Change this file to get your personal Porfolio */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+// Website related settings
+const settings = {
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
+//SEO Related settings
+const seo = {
+  title: "Isaac's Portfolio",
+  description:
+    "A passionate Software Engineer 🚀 with experience of building accessible, scalable and high-quality web applications with Typescript / React / C#.NET",
+  og: {
+    title: "Isaac Underwood Portfolio",
+    type: "website",
+    url: "http://isaac-underwood.github.io/",
+  },
 };
 
+//Home Page
 const greeting = {
-  username: "Isaac Underwood",
-  title: "Hey, I'm Isaac",
-  subTitle: emoji(
-    "A passionate Software Engineer 🚀 with experience of building high quality Web applications with Typescript / React / C#.NET"
-  ),
+  title: "Isaac Underwood",
+  logo_name: "IsaacUnderwood",
+  subTitle:
+    "A passionate Software Engineer 🚀 with experience of building accessible, scalable and high-quality web applications with Typescript / React / C#.NET",
   resumeLink:
-    "https://docs.google.com/document/d/1SgU1e2e_iczPrwwBP_vHmN7kj48TDOx5/edit?usp=sharing&ouid=105224870553008644531&rtpof=true&sd=true", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://docs.google.com/document/d/1SgU1e2e_iczPrwwBP_vHmN7kj48TDOx5/edit?usp=sharing&ouid=105224870553008644531&rtpof=true&sd=true",
+  portfolio_repository: "https://github.com/isaac-underwood",
+  githubProfile: "https://github.com/isaac-underwood",
 };
 
-// Social Media Links
+const socialMediaLinks = [
+  /* Your Social Media Link */
+  // github: "https://github.com/ashutosh1919",
+  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+  // gmail: "ashutoshhathidara98@gmail.com",
+  // gitlab: "https://gitlab.com/ashutoshhathidara98",
+  // facebook: "https://www.facebook.com/laymanbrother.19/",
+  // twitter: "https://twitter.com/ashutosh_1919",
+  // instagram: "https://www.instagram.com/layman_brother/"
 
-const socialMediaLinks = {
-  github: "https://github.com/isaac-underwood",
-  linkedin: "https://www.linkedin.com/in/isaac-underwood-4083061a8/",
-  gmail: "isaacund220220@gmail.com",
-  // gitlab: "https://gitlab.com/saadpasta",
-  // facebook: "https://www.facebook.com/saad.pasta7",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
-};
+  {
+    name: "Github",
+    link: "https://github.com/isaac-underwood",
+    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
+    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/isaac-underwood-4083061a8/",
+    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
+    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+  },
+];
 
-// Skills Section
-
-const skillsSection = {
-  title: "What I do",
-  subTitle: "SOFTWARE ENGINEER WITH A PASSION FOR BUILDING AWESOME, ACCESSIBLE USER EXPERIENCES",
-  skills: [
-    emoji(
-      "⚡ Develop highly scalable, accessible and maintainable web applications"
-    ),
-    emoji("⚡ Provide high quality solutions to solve complex business problems"),
-  ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
+const skills = {
+  data: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "typescript",
-      fontAwesomeClassname: "fab fa-code"
-    },
-    {
-      skillName: "react",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "vuejs",
-      fontAwesomeClassname: "fab fa-vuejs"
-    },
-    {
-      skillName: "sql",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "c#.net",
-      fontAwesomeClassname: "fas fa-server"
-    },
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Education Section
-
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Otago Polytechnic",
-      logo: require("./assets/images/otagoPolytechnicLogo.png"),
-      subHeader: "Bachelor of Information Technology",
-      duration: "February 2018 - November 2020",
-      desc: "Took courses predominantly in Software Development as well as Security, Networking, A.I and Machine Learning.",
-    },
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "60%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "35%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "70%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Education Perfect",
-      companylogo: require("./assets/images/educationPerfectLogo.png"),
-      date: "December 2022 – Present",
-      desc: "Working in a high performing product team responsible for the core entities of the Education Perfect product.",
-      descBullets: [
-        "Shipping high-quality features to simplify the way teachers can set up classes",
-        "Work on security improvements for the identity access management system",
-        "Improving the product experience for internal and external users by building a new self-serve admin experience around the core entities of the product",
-        "Contribute solutions to help create an amazing front-end developer experience, including GraphQL enhancements"
-      ]
-    },
-    {
-      role: "Associate Software Engineer",
-      company: "Education Perfect",
-      companylogo: require("./assets/images/educationPerfectLogo.png"),
-      date: "March 2021 – December 2022",
-      desc: "Working in a cross-functional team to rebuild an area within the product in a scalable, maintainable and accessible micro front-end and microservice architecture, using GraphQL, React.js and C# .NET as part of the greenfield project.",
-      descBullets: [
-        "Fixing bugs and developing high-value features within the legacy monolithic product",
-        "Communicating to a diverse group within the company, which includes translating technical ideas to non-technical people as well as demonstrating team progress to key stakeholders",
-        "Being open and transparent and constantly sharing ideas within the team, as well as effectively reflecting on the team and oneself to be continuously improving",
-        "Stepping up to help lead in the front end space within the team project"
-      ]
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Education Perfect",
-      companylogo: require("./assets/images/educationPerfectLogo.png"),
-      date: "January 2021 – March 2021",
-      desc: "A 10-week internship working within an agile cross-functional team environment.",
-      descBullets: [
-        "Automation of regression testing using Cypress end-to-end testing",
-        "Using problem solving skills to fix bugs within automated tests and the Education Perfect platform",
-        "Data migration from SQL Server to PostgreSQL (in C#.NET)"
-      ]
-    },
-    {
-      role: "Teaching Assistant",
-      company: "Otago Polytechnic",
-      companylogo: require("./assets/images/otagoPolytechnicLogo.png"),
-      date: "February 2019 – November 2020",
-      desc: "Helping a diverse group of students to learn within lectures and tutorials, the following:",
-      descBullets: [
-        "Using an IDE to develop interactive, event-driven GUI and console-based applications",
-        "Basic principles of Object-Oriented analysis, design and programming, including inheritance, polymorphism and encapsulation",
-        "Good programming practices, including version control (Git) and code commenting"
-      ]
-    },
-  ]
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+      title: "Software Engineering",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Building awesome, accessible, scalable and maintainable user experiences",
+        "⚡ Building features in the backend using C#.NET",
+      ],
+      softwareSkills: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Certifications 🏆 "),
-  subtitle:
-    "Certifications I am working towards obtaining",
-
-  achievementsCards: [
-    {
-      title: "IAAP Certified Professional in Accessibility Core Competencies (CPACC)",
-      subtitle:
-        "To enhance my knowledge on the broad accessibility domain, I am working towards obtaining a CPACC certification.",
-      image: require("./assets/images/cpacc-logo.png"),
-      footerLink: [
-        {
-          name: "Certification details",
-          url: "https://www.accessibilityassociation.org/s/certified-professional"
+          skillName: "HTML5",
+          fontAwesomeClassname: "simple-icons:html5",
+          style: {
+            color: "#E34F26",
+          },
         },
-      ]
+        {
+          skillName: "CSS3",
+          fontAwesomeClassname: "fa-css3",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "Sass",
+          fontAwesomeClassname: "simple-icons:sass",
+          style: {
+            color: "#CC6699",
+          },
+        },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: {
+            backgroundColor: "#fff",
+            color: "#007acc",
+          },
+        },
+        {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "NPM",
+          fontAwesomeClassname: "simple-icons:npm",
+          style: {
+            color: "#CB3837",
+          },
+        },
+        {
+          skillName: "Yarn",
+          fontAwesomeClassname: "simple-icons:yarn",
+          style: {
+            color: "#2C8EBB",
+          },
+        },
+        {
+          skillName: "C#.NET",
+          fontAwesomeClassname: "fa-code",
+          style: {
+            color: "#1e3050",
+          },
+        },
+      ],
     },
   ],
-  display: true // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
+// Education Page
+const competitiveSites = {
+  competitiveSites: [
+  ],
+};
 
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
+const degrees = {
+  degrees: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      title: "Otago Polytechnic",
+      subtitle: "Bachelor of Information Technology",
+      logo_path: "op-logo.png",
+      alt_name: "Otago Polytechnic",
+      duration: "2018 - 2020",
+      descriptions: [
+        "⚡ Took courses predominantly in Software Development as well as Security, Networking, A.I and Machine Learning",
+        "⚡ As part of a final year project, I worked on an A.I project - more specificially, natural language processing of Twitter tweets",
+      ],
+      website_link: "https://www.op.ac.nz/",
+    },
+  ],
+};
+
+const certifications = {
+  certifications: [
+    {
+      title: "IAAP Certified Professional in Accessibility Core Competencies (CPACC)*",
+      subtitle: "* I am currently working towards obtaining this certification.",
+      logo_path: "cpacc-logo.png",
+      certificate_link:
+        "https://www.accessibilityassociation.org/s/certified-professional",
+      alt_name: "International Association of Accessibility Professionals",
+      color_code: "#8C151599",
+    },
+  ],
+};
+
+// Experience Page
+const experience = {
+  title: "Experience",
+  subtitle: "Work and Internship",
+  description:
+    "I have been working for a high growth EdTech SaaS company for over 2 years, predominantly as a front end software engineer, as my passion is to create amazing user experiences.",
+  header_image_path: "experience.svg",
+  sections: [
+    {
+      title: "Work",
+      experiences: [
+        {
+          title: "Software Engineer",
+          company: "Education Perfect",
+          company_url: "https://educationperfect.com/",
+          logo_path: "educationPerfectLogo.png",
+          duration: "December 2022 - Present",
+          location: "Dunedin, New Zealand",
+          description:
+            `Working in a high performing product team responsible for the core entities of the Education Perfect product. This includes:
+            ⚡ Shipping high-quality features to simplify the way teachers can set up classes.
+            ⚡ Improving the product experience for internal and external users by building a new self-serve admin experience around the core entities of the product.
+            ⚡ Contributing solutions to help create an amazing front-end developer experience, including GraphQL enhancements.
+            `,
+          color: "#0879bf",
+        },
+        {
+          title: "Associate Software Engineer",
+          company: "Education Perfect",
+          company_url: "https://educationperfect.com/",
+          logo_path: "educationPerfectLogo.png",
+          duration: "March 2021 - December 2022",
+          location: "Dunedin, New Zealand",
+          description:
+            `Working in a cross-functional team to rebuild an area within the product in a scalable, maintainable and accessible micro front-end and microservice architecture, using GraphQL, React.js and C# .NET as part of the greenfield project. In addition to this, I stepped up to help lead in the front end space within the team project, where I learnt numerous invaluable things.`,
+          color: "#0879bf",
+        },
+      ],
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+      title: "Internships",
+      experiences: [
+        {
+          title: "Software Engineer Intern",
+          company: "Education Perfect",
+          company_url: "https://educationperfect.com/",
+          logo_path: "educationPerfectLogo.png",
+          duration: "January 2021 - March 2021",
+          location: "Dunedin, New Zealand",
+          description:
+            "An immersive 10-week internship where I contributed to automating regression testing using Cypress end-to-end testing, fixed bugs within existing automated tests and the wider product, and data migration from SQL Server to PostgreSQL.",
+          color: "#000000",
+        },
+      ],
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
 };
 
-// Talks Sections
+// Projects Page
+const projectsHeader = {
+  title: "Projects",
+  description:
+    "I am currently working on a web project which uses the Spotify API to give immersive and interesting visualisations of songs.",
+  avatar_image_path: "projects_image.svg",
+};
 
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
+const publicationsHeader = {
+  title: "Publications",
+  description:
+    "I have worked on and published a few research papers and publications of my own.",
+  avatar_image_path: "projects_image.svg",
+};
 
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+const publications = {
+  data: [
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
+    // {
+    //   id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
+    //   name: "Artificial Intelligence Paper",
+    //   createdAt: "2020-03-06T16:26:54Z",
+    //   description: "Paper Written on Artificial Intelligence published in xyz ",
+    //   url:
+    //     "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+    // },
   ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  email_address: greeting.gmail
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
 };
 
 export {
-  illustration,
+  settings,
+  seo,
   greeting,
   socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails
+  skills,
+  competitiveSites,
+  degrees,
+  certifications,
+  experience,
+  projectsHeader,
+  publicationsHeader,
+  publications,
 };
